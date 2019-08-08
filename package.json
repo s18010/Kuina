@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "eslint": "eslint --fix"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,24 @@
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.0.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+    "react-dom": "^16.8.6",
+    "@material-ui/core": "latest",
+    "@material-ui/styles": "latest",
+    "@material-ui/icons": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "babel-eslint": "10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "prettier": "^1.18.2"
+  },
+  "optionalDependencies": {}
 }

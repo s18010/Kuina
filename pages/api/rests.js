@@ -16,7 +16,7 @@ export default async (req, res) => {
   }
 
   // 未入力なら，おもろまち固定
-  const defaddress = "沖縄県那覇市おもろまち1";
+  const defaddress = "沖縄県那覇市おもろまち";
   let address = "";
   if(area==undefined || area==""){
       address = encodeURIComponent(defaddress);

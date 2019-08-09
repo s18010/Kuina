@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import SelectForm from './SelectForm';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -13,7 +14,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default () => {
+export default (props) => {
   const classes = useStyles();
   const [values, setValues] = React.useState({
     name: ''
@@ -25,7 +26,9 @@ export default () => {
 
   return (
     <form className={classes.container} noValidate autoComplete="off">
+      <SelectForm />
       <TextField 
+        name="keyword"
         className={classes.textField}
         id="searchField"
         placeholder="ステーキ　ランチ"

@@ -1,11 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-// import Input from '@material-ui/core/Input';
-// import OutlinedInput from '@material-ui/core/OutlinedInput';
-import FilledInput from '@material-ui/core/FilledInput';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
-// import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
@@ -44,7 +40,6 @@ export default () => {
   }
 
   return (
-    <form className={classes.root} autoComplete="off">
       <FormControl className={classes.formControl}>
         <InputLabel ref={inputLabel} htmlFor="area">エリア</InputLabel>
         <Select
@@ -52,17 +47,15 @@ export default () => {
           onChange={handleChange}
           inputProps={{
             name: 'area',
-            id: 'area',
           }}
         >
-          <MenuItem value="沖縄">
+          <MenuItem value="okinawa">
             <em>沖縄</em>
           </MenuItem>
-          <MenuItem value={10}>東京</MenuItem>
-          <MenuItem value={20}>仙台</MenuItem>
-          <MenuItem value={30}>大阪</MenuItem>
+          <MenuItem value="東京">東京</MenuItem>
+          <MenuItem value="仙台">仙台</MenuItem>
+          <MenuItem value="大阪">大阪</MenuItem>
         </Select>
       </FormControl>
-    </form>
   );
 }

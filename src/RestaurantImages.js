@@ -2,8 +2,14 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
 
 const useStyles = makeStyles(theme => ({
+  titleBar: {
+    background:
+      'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+      'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+  },
   root: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -29,6 +35,14 @@ export default props => {
             return (
               <GridListTile key={restaurant.id} cols={3}>
                 <img src={restaurant.image_url} alt={restaurant.name} />
+                <a href={restaurant.url} target="_blank" rel="noopener noreferrer">
+                  <GridListTileBar
+                    title={restaurant.name}
+                    titlePosition="top"
+                    actionPosition="left"
+                    className={classes.titleBar}
+                  />
+                </a>
               </GridListTile>
             );
           })}

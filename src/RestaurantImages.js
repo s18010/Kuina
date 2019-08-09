@@ -11,6 +11,7 @@ const useStyles = makeStyles(theme => ({
       'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
   },
   root: {
+    paddingTop: 110,
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
@@ -30,7 +31,7 @@ export default props => {
     <div className={classes.root}>
       <GridList cellHeight="auto" className={classes.gridList} cols={12} spacing={20}>
         {restaurants
-          .filter((restaurant, index) => index < 20)
+          .filter((restaurant, index) => index < 30)
           .map(restaurant => {
             return (
               <GridListTile key={restaurant.id} cols={3}>

@@ -49,12 +49,12 @@ export default () => {
             name: 'area',
           }}
         >
-          <MenuItem value="okinawa">
+          <MenuItem value="沖縄那覇市">
             <em>沖縄</em>
           </MenuItem>
-          <MenuItem value="東京">東京</MenuItem>
-          <MenuItem value="仙台">仙台</MenuItem>
-          <MenuItem value="大阪">大阪</MenuItem>
+          <MenuItem value="東京都渋谷区">東京</MenuItem>
+          <MenuItem value="宮城県仙台市">仙台</MenuItem>
+          <MenuItem value="大阪府大阪市">大阪</MenuItem>
         </Select>
       </FormControl>
   );

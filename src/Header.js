@@ -8,6 +8,8 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import theme from './theme';
+import SelectForm from './SelectForm';
+import SearchField from './SearchField';
 
 const useStyles = makeStyles(thm => ({
   root: {
@@ -27,7 +29,7 @@ export default () => {
   return (
     <div className={classes.root}>
       <ThemeProvider theme={theme}>
-        <AppBar position="sticky" color="primary">
+        <AppBar position="fixed" color="primary">
           <Toolbar>
             <IconButton
               edge="start"
@@ -40,7 +42,9 @@ export default () => {
             <Typography variant="h6" color="secondary" className={classes.title}>
               LUNCH MAP
             </Typography>
-            <Button color="secondary">Login</Button>
+            <SearchField />
+            <SelectForm />
+            {/* <Button color="secondary">Login</Button> */}
           </Toolbar>
         </AppBar>
       </ThemeProvider>

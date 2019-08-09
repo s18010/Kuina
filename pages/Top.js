@@ -1,14 +1,14 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import Header from '../src/Header';
-import SliderSample from '../src/Slider';
+// import SliderSample from '../src/Slider';
 import RestaurantImages from '../src/RestaurantImages';
 
 const Top = props => {
   return (
     <div>
       <Header />
-      <SliderSample />
+      {/* <SliderSample /> */}
       <RestaurantImages restaurants={props.restaurants_j} />
     </div>
   );

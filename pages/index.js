@@ -1,6 +1,8 @@
+import React from 'react';
+
 const Index = () => (
   <div>
-   <p>hello, next.js!</p>
+    <p>hello, next.js!</p>
   </div>
 );
 

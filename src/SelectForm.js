@@ -49,7 +49,7 @@ export default () => {
             name: 'area',
           }}
         >
-          <MenuItem value="沖縄那覇市">
+          <MenuItem value="沖縄県那覇市">
             <em>沖縄</em>
           </MenuItem>
           <MenuItem value="東京都渋谷区">東京</MenuItem>

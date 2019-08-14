@@ -10,14 +10,14 @@ const useStyles = makeStyles(theme => ({
   },
   textField: {
     width: 300,
-    padding: 10
+    padding: 10,
   },
 }));
 
-export default (props) => {
+export default props => {
   const classes = useStyles();
   const [values, setValues] = React.useState({
-    name: ''
+    name: '',
   });
 
   const handleChange = name => event => {
@@ -27,19 +27,19 @@ export default (props) => {
   return (
     <form className={classes.container} noValidate autoComplete="off">
       <SelectForm />
-      <TextField 
+      <TextField
         name="keyword"
         className={classes.textField}
         id="searchField"
         placeholder="ステーキ　ランチ"
-        autoFocus={true}
+        autoFocus
         fullWidth
         margin="dense"
         variant="filled"
         InputLabelProps={{
-        shrink: true,
+          shrink: true,
         }}
       />
     </form>
   );
-}
+};

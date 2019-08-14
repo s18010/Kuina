@@ -40,22 +40,24 @@ export default () => {
   }
 
   return (
-      <FormControl className={classes.formControl}>
-        <InputLabel ref={inputLabel} htmlFor="area">エリア</InputLabel>
-        <Select
-          value={values.area}
-          onChange={handleChange}
-          inputProps={{
-            name: 'area',
-          }}
-        >
-          <MenuItem value="沖縄県那覇市">
-            <em>沖縄</em>
-          </MenuItem>
-          <MenuItem value="東京都渋谷区">東京</MenuItem>
-          <MenuItem value="宮城県仙台市">仙台</MenuItem>
-          <MenuItem value="大阪府大阪市">大阪</MenuItem>
-        </Select>
-      </FormControl>
+    <FormControl className={classes.formControl}>
+      <InputLabel ref={inputLabel} htmlFor="area">
+        エリア
+      </InputLabel>
+      <Select
+        value={values.area}
+        onChange={handleChange}
+        inputProps={{
+          name: 'area',
+        }}
+      >
+        <MenuItem value="沖縄県那覇市">
+          <em>沖縄</em>
+        </MenuItem>
+        <MenuItem value="東京都渋谷区">東京</MenuItem>
+        <MenuItem value="宮城県仙台市">仙台</MenuItem>
+        <MenuItem value="大阪府大阪市">大阪</MenuItem>
+      </Select>
+    </FormControl>
   );
-}
+};
